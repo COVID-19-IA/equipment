@@ -39,3 +39,22 @@
   margin-left: 0;
   hanging-punctuation: allow-end;
 }
+
+.Section__nesting {
+  margin-top: 2.5rem
+}
+
+.Section__nesting + .Section__nesting {
+  margin-top: 3.75rem
+}
+
+.Section__heading {
+  margin-top: 1.111111111rem;
+  margin-bottom: 1.111111111rem;
+  text-align: center;
+}
+
+.Section__nesting .Section__heading {
+  font-size: 1.125rem;
+  line-height: 2;
+}
