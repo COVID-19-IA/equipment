@@ -83,6 +83,7 @@ ul ul {
 }
 
 .Breadcrumb {
+  margin-bottom: -8px;
   position: absolute;
   top: 23px;
   left: 25px;
@@ -98,6 +99,12 @@ ul ul {
   background-color: #fff;
   border-radius: 1000px;
   text-decoration: none;
+}
+
+@media (min-width: 426px) {
+  .Breadcrumb__crumb {
+    display: inline-block;
+  }
 }
 
 .Breadcrumb__crumb[aria-current] {
@@ -450,21 +457,47 @@ ul ul {
 
 .MetaInformationList {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: -30px;
+  padding: 0 60px;
 }
 
 .MetaInformationList__item {
   display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.MetaInformationList__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .MetaInformationList__label {
-  align-self: baseline;
+  padding: 2px 4px;
   border: 1px solid #151A03;
   border-radius: 4px;
   font-size: 0.875rem;
+  line-height: 1;
   white-space: nowrap;
 }
 
 .MetaInformationList__value {
   margin-left: 8px;
+}
+
+@media (min-width: 426px) {
+  .MetaInformationList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: -30px;
+    padding: 0 60px;
+  }
+}
+
+.FlexibleFrame > iframe {
+  width: auto;
 }
