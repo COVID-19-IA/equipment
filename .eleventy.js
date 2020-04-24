@@ -25,6 +25,11 @@ module.exports = function (eleventyConfig) {
     return v.replace("https:", "http:");
   });
 
+  // browser-sync option
+  eleventyConfig.setBrowserSyncConfig({
+    startPath: '/ppe/'
+  });
+
   return {
     dir: { input: "src", output: "docs" },
     passthroughFileCopy: true,
