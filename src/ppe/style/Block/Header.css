@@ -29,15 +29,18 @@
   height: auto;
 }
 
-.Header__copy {
+.Header__note {
   margin: 0 auto;
-  max-width: 38.75rem;
   font-size: 0.75rem;
-  text-align: center;
+  line-height: 1.5;
 }
 
-.Header.-index .Header__copy {
+.Header__desc {
+  margin: 3.75rem auto 0;
+  max-width: 38.75rem;
+  font-family: "TazuganeInfoStdN-Bold", sans-serif;
   text-align: left;
+  line-height: 2;
 }
 
 .Header__sub {
@@ -60,7 +63,7 @@
     width: 200px;
   }
 
-  .Header__copy {
+  .Header__note {
     margin-top: 0;
   }
 
