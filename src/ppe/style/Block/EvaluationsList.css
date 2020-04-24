@@ -21,6 +21,10 @@
   white-space: nowrap;
 }
 
+.EvaluationsList__content {
+  margin-left: 0;
+}
+
 .Evaluation__starRating {
   display: flex;
   align-items: center;
@@ -40,4 +44,49 @@
 
 .Evaluation__starRatingValue {
   margin-left: 8px;
+}
+
+@media (max-width: 427px) {
+  .EvaluationsList,
+  .EvaluationsList__item,
+  .EvaluationsList__head,
+  .EvaluationsList__content {
+    display: block;
+  }
+
+  .EvaluationsList__item:not(:first-child) {
+    margin-top: 24px;
+  }
+
+  .EvaluationsList__head,
+  .EvaluationsList__content {
+    padding: 0;
+  }
+
+  .EvaluationsList__head {
+    line-height: inherit;
+    font-family: "TazuganeInfoStdN-Bold", sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .EvaluationsList__content {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .Evaluation__starRating {
+    justify-content: center;
+  }
+
+  .Evaluation__starRatingValue {
+    font-family: "TazuganeInfoStdN-Bold", sans-serif;
+    font-weight: bold;
+  }
+
+  .EvaluationsList__description {
+    display: block;
+    font-size: 0.75rem;
+  }
 }
