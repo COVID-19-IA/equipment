@@ -1,0 +1,16 @@
+.CallForReview {
+  padding: 30px;
+  background-color: rgba(21, 26, 3, 0.05);
+  border-radius: 20px;
+}
+
+.CallForReview > *:first-child {
+  margin-top: 0;
+}
+
+.CallForReview > *:last-child {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 0;
+}

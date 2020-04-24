@@ -1,13 +1,8 @@
 .HeadingAnchor {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
-}
-
-@media (min-width: 426px) {
-  .HeadingAnchor {
-    justify-content: center;
-  }
 }
 
 .HeadingAnchor h2,

@@ -8,6 +8,12 @@
   background-color: #fff;
 }
 
+.Section__inner {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 38.75rem;
+}
+
 .Section h2 {
   font-size: 1.5rem;
 }

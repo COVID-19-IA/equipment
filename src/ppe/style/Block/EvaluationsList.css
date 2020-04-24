@@ -1,6 +1,6 @@
 .EvaluationsList {
   display: table;
-  margin: auto;
+  margin: 0 auto 50px;
   border-collapse: collapse;
 }
 
