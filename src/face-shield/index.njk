@@ -36,6 +36,23 @@ url: https://covid-19-act.jp/ppe/
       gtag('js', new Date());
       gtag('config', 'UA-162419995-4');
     </script>
+
+    <style>
+    .Chip {
+      padding: 0 0.25rem;
+      border-radius: 0.25rem;
+      color: #fff;
+      font-size: 0.875rem;
+      line-height: 1.25;
+      background-color: #000;
+    }
+    .Chip.-recommended {
+      background-color: #0073E5;
+    }
+    .Chip.-not-recommended {
+      background-color: #C70000;
+    }
+    </style>
   </head>
 
   <body>
@@ -83,6 +100,12 @@ url: https://covid-19-act.jp/ppe/
             <div class="Item">
               <img src="image/illustrations/face-shield.png" alt="" />
               <span class="Item__name">ゴーグルとフェイスシールド</span>
+            </div>
+            <div>
+              <span class="Chip">手作り可</span>
+              <span class="Chip">再利用可</span>
+              <span class="Chip -recommended">医療推奨</span>
+              <span class="Chip -not-recommended">医療非推奨</span>
             </div>
             <a class="Btn">一覧を見る</a> <!-- TODO @masuP9 hrefを入れる or href なしのデザインをあてる -->
           </li>
