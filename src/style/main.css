@@ -105,6 +105,14 @@ ul ul {
   max-width: 38.75rem;
 }
 
+.Separator {
+  display: block;
+  margin: 4.375rem auto;
+  width: 30px;
+  height: 8px;
+  background-color: #fff;
+}
+
 .Section.-hasSeparator::before {
   /* 抑えの線 */
   content: "";
