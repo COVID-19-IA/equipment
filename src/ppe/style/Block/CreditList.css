@@ -1,0 +1,14 @@
+.CreditList {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 38.75rem;
+  line-height: 2;
+}
+
+.CreditList__key {
+  margin-top: 1rem;
+}
+
+.CreditList__value {
+  margin: 0;
+}

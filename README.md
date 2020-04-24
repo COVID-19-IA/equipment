@@ -11,3 +11,7 @@ npm i -g yarn
 yarn install
 yarn dev
 ```
+
+## Lisence
+
+[BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ja)
