@@ -1,0 +1,43 @@
+.MetaInformationList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: -30px;
+    padding: 0 60px;
+  }
+
+  .MetaInformationList__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .MetaInformationList__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .MetaInformationList__label {
+    padding: 2px 4px;
+    border: 1px solid #151A03;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .MetaInformationList__value {
+    margin-left: 8px;
+  }
+
+  @media (min-width: 426px) {
+    .MetaInformationList {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 0;
+      margin-bottom: -30px;
+      padding: 0 60px;
+    }
+  }
+

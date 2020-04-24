@@ -1,0 +1,22 @@
+.Item {
+  margin: 3.75em 0 0;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.Item img {
+  width: 100%;
+  max-width: 18.75rem;
+  height: auto;
+  vertical-align: top;
+}
+
+.Item__name {
+  display: block;
+  margin-top: 1.25rem;
+}
+
+.ColumnList .Item {
+  margin-top: 0;
+}
+

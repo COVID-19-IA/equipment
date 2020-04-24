@@ -1,0 +1,29 @@
+.BulletedList {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  max-width: 38.75rem;
+}
+
+.BulletedList li {
+  list-style-position: inside;
+  list-style-type: none;
+  display: flex;
+  align-items: baseline;
+  line-height: 2;
+}
+
+.BulletedList li::before {
+  flex-shrink: 0;
+  content: "";
+  margin-right: 0.375rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 99rem; /* fxxking magic number! */
+  background-color: currentColor;
+}
+
+.BulletedList li + li {
+  margin-top: 1rem;
+}
+

@@ -1,0 +1,41 @@
+.ColumnList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 426px) {
+  .ColumnList {
+    margin-right: -1.5625rem;
+    margin-left: -1.5625rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .ColumnList {
+    margin-right: -1.875rem;
+    margin-left: -1.875rem;
+  }
+}
+
+.ColumnList li {
+  list-style: inside none;
+  margin-top: 3.75rem;
+  max-width: 18.75rem;
+}
+
+@media (min-width: 426px) {
+  .ColumnList li {
+    margin-right: 1.5625rem;
+    margin-left: 1.5625rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .ColumnList li {
+    margin-right: 1.875rem;
+    margin-left: 1.875rem;
+  }
+}

@@ -1,0 +1,64 @@
+html {
+  font-family: "TazuganeInfoStdN-Regular", sans-serif;
+  color: #232323;
+  line-height: 1.6;
+  background-color: #e0ff00;
+}
+
+body {
+  margin: 7rem auto 1.875rem;
+  width: 90%;
+  max-width: 63.75rem;
+  letter-spacing: 0.03em;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: currentColor;
+  text-underline-position: under;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  margin-top: 4.375rem;
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+h1,
+h2 {
+  font-family: "TazuganeGothicStdN-Heavy", sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "TazuganeInfoStdN-Bold", sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 2rem;
+}
+
+ol ol,
+ul ul {
+  margin-top: 1rem;
+}
+

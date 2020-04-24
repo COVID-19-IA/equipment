@@ -1,0 +1,35 @@
+.Breadcrumb {
+  margin-bottom: -8px;
+  position: absolute;
+  top: 23px;
+  left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.Breadcrumb__crumb {
+  padding: 7px 10px 5px;
+  line-height: 1;
+  background-color: #fff;
+  border-radius: 1000px;
+  text-decoration: none;
+}
+
+.Breadcrumb__crumb[aria-current] {
+  padding: 4px 8px;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 426px) {
+  .Breadcrumb__crumb[aria-current],
+  .Breadcrumb__crumb + img:last-of-type {
+    display: none;
+  }
+}
+
+.Breadcrumb__separator {
+  margin: 0 8px;
+}
