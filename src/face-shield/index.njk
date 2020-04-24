@@ -81,6 +81,50 @@ url: https://covid-19-act.jp/ppe/
       font-size: 1.125rem;
       line-height: 2;
     }
+
+    .AssesmentList {
+      margin-top: 1.5625rem;
+    }
+    .AssesmentList__row {
+      margin-top: 1.25rem;
+    }
+    @media (min-width: 768px) {
+      .AssesmentList__row {
+        display: flex;
+      }
+      .AssesmentList__key {
+        flex-grow: 1;
+        width: 9rem;
+        max-width: 9rem;
+
+        display: flex;
+        align-items: center;
+      }
+      .AssesmentList__key span {
+        flex-basis: 0%;
+        width: 100%;
+        white-space: nowrap;
+      }
+      .AssesmentList__key::after {
+        content: "";
+        display: block;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        border-top: 1px dashed rgba(0,0,0, 0.25);
+        width: 100%;
+        height: 0;
+      }
+
+
+
+      /* ↓ main.css からタイプセレクタをなくせば不要 */
+      .Section dt.AssesmentList__key {
+        margin: 0;
+      }
+      .Section dd.AssesmentList__value {
+        margin: 0;
+      }
+    }
     </style>
   </head>
 
@@ -166,6 +210,44 @@ url: https://covid-19-act.jp/ppe/
 
         <section class="Section__nesting" id="Assessment">
           <h3 class="Section__heading">主な評価基準</h3>
+          <dl class="AssesmentList">
+            <div class="AssesmentList__row">
+              <dt class="AssesmentList__key"><span>JIS規格相当</span></dt>
+              <dd class="AssesmentList__value">JIS規格の準拠に相当すると思われるか</dd>
+            </div>
+            <div class="AssesmentList__row">
+              <dt class="AssesmentList__key"><span>遮断性能</span></dt>
+              <dd class="AssesmentList__value">正面および上部等からの飛沫の進入を十分に防げるか</dd>
+            </div>
+            <div class="AssesmentList__row">
+              <dt class="AssesmentList__key"><span>運動フィット性</span></dt>
+              <dd class="AssesmentList__value">小走りや振り向きなどの運動でズレないか</dd>
+            </div>
+            <div class="AssesmentList__row">
+              <dt class="AssesmentList__key"><span>快適性</span></dt>
+              <dd class="AssesmentList__value">息苦しさや接触などの不快感が防止されているか</dd>
+            </div>
+            <div class="AssesmentList__row">
+              <dt class="AssesmentList__key"><span>使用耐久性</span></dt>
+              <dd class="AssesmentList__value">使用中に想定される衝突や引っかきに耐えるか</dd>
+            </div>
+            <div class="AssesmentList__row">
+              <dt class="AssesmentList__key"><span>消毒耐久性</span></dt>
+              <dd class="AssesmentList__value">アルコールや次亜塩素酸ナトリウムによる除染・消毒に耐えるか</dd>
+            </div>
+            <div class="AssesmentList__row">
+              <dt class="AssesmentList__key"><span>作製容易性</span></dt>
+              <dd class="AssesmentList__value">作製に特別な練習を必要としないか</dd>
+            </div>
+            <div class="AssesmentList__row">
+              <dt class="AssesmentList__key"><span>省コスト性</span></dt>
+              <dd class="AssesmentList__value">材料の価格や入手などのハードルは低いか</dd>
+            </div>
+            <div class="AssesmentList__row">
+              <dt class="AssesmentList__key"><span>再利用性</span></dt>
+              <dd class="AssesmentList__value">適切な除染・消毒による再度利用は可能か</dd>
+            </div>
+          </dl>
         </section>
 
         <section class="Section__nesting">
