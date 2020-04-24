@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
 
   // browser-sync option
   eleventyConfig.setBrowserSyncConfig({
-    startPath: '/ppe/'
+    startPath: "/ppe/"
   });
 
   return {
