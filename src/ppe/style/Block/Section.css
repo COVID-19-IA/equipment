@@ -24,11 +24,11 @@
 }
 
 .Section__nesting {
-  margin-top: 2.5rem
+  margin-top: 2.5rem;
 }
 
 .Section__nesting + .Section__nesting {
-  margin-top: 3.75rem
+  margin-top: 3.75rem;
 }
 
 .Section__heading {

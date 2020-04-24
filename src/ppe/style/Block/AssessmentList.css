@@ -1,42 +1,34 @@
 .AssessmentList {
-    margin-top: 1.5625rem;
-  }
+  margin-top: 1.5625rem;
+}
+.AssessmentList__row {
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 768px) {
   .AssessmentList__row {
-    margin-top: 1.25rem;
+    display: flex;
   }
+  .AssessmentList__key {
+    flex-grow: 1;
+    width: 9rem;
+    max-width: 9rem;
 
-  @media (min-width: 768px) {
-    .AssessmentList__row {
-      display: flex;
-    }
-    .AssessmentList__key {
-      flex-grow: 1;
-      width: 9rem;
-      max-width: 9rem;
-
-      display: flex;
-      align-items: center;
-    }
-    .AssessmentList__key span {
-      flex-basis: 0%;
-      width: 100%;
-      white-space: nowrap;
-    }
-    .AssessmentList__key::after {
-      content: "";
-      display: block;
-      margin-right: 0.5rem;
-      margin-left: 0.5rem;
-      border-top: 1px dashed rgba(0,0,0, 0.25);
-      width: 100%;
-      height: 0;
-    }
-
-    /* ↓ main.css からタイプセレクタをなくせば不要 */
-    .Section dt.AssessmentList__key {
-      margin: 0;
-    }
-    .Section dd.AssessmentList__value {
-      margin: 0;
-    }
+    display: flex;
+    align-items: center;
   }
+  .AssessmentList__key span {
+    flex-basis: 0%;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .AssessmentList__key::after {
+    content: "";
+    display: block;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    border-top: 1px dashed rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 0;
+  }
+}
