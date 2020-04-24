@@ -1,4 +1,5 @@
 .Chip {
+  display: inline-block;
   padding: 0 0.25rem;
   border-radius: 0.25rem;
   color: #fff;
@@ -6,10 +7,11 @@
   line-height: 1.25;
   background-color: #000;
 }
+
 .Chip.-recommended {
-  background-color: #0073E5;
-}
-.Chip.-not-recommended {
-  background-color: #C70000;
+  background-color: #0073e5;
 }
 
+.Chip.-not-recommended {
+  background-color: #c70000;
+}
