@@ -1,0 +1,60 @@
+.Section.-hasSeparator::before {
+  /* 抑えの線 */
+  content: "";
+  display: block;
+  margin: 4.375rem auto;
+  width: 30px;
+  height: 8px;
+  background-color: #fff;
+}
+
+.Section h2 {
+  font-size: 1.5rem;
+}
+
+.Section h3 {
+  font-size: 1.25rem;
+}
+
+.Section p {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 38.75rem;
+  hanging-punctuation: allow-end;
+}
+
+.Section dl {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 38.75rem;
+  line-height: 2;
+}
+
+.Section dt {
+  margin-top: 1rem;
+  font-family: "TazuganeInfoStdN-Bold", sans-serif;
+}
+
+.Section dd {
+  margin-left: 0;
+  hanging-punctuation: allow-end;
+}
+
+.Section__nesting {
+  margin-top: 2.5rem
+}
+
+.Section__nesting + .Section__nesting {
+  margin-top: 3.75rem
+}
+
+.Section__heading {
+  margin-top: 1.111111111rem;
+  margin-bottom: 1.111111111rem;
+  text-align: center;
+}
+
+.Section__nesting .Section__heading {
+  font-size: 1.125rem;
+  line-height: 2;
+}

@@ -1,0 +1,71 @@
+.Header {
+  text-align: center;
+}
+
+.Header__main {
+  margin-top: 3.75rem;
+  margin-bottom: 6px;
+  font-family: "TazuganeGothicStdN-Heavy", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  letter-spacing: 0.03em;
+}
+
+.Header__main > span {
+  display: inline-block;
+}
+
+.Header.-index .Header__main {
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-size: 2.125rem;
+}
+
+.Header__logo {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 20.75rem;
+  height: auto;
+}
+
+.Header__copy {
+  margin: 0 auto;
+  max-width: 38.75rem;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.Header.-index .Header__copy {
+  text-align: left;
+}
+
+.Header__sub {
+  margin-top: 3.75rem;
+  font-family: "TazuganeGothicStdN-Heavy", sans-serif;
+  font-size: 2.125rem;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 427px) {
+  .Header__main {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  .Header__logo {
+    width: 200px;
+  }
+
+  .Header__copy {
+    margin-top: 0;
+  }
+
+  .Header__sub {
+    margin-top: 2.625rem;
+    font-size: 1.5rem;
+  }
+}

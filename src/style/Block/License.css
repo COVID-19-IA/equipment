@@ -1,0 +1,27 @@
+.License {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.License__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.License a {
+  text-decoration: none;
+}
+
+.License svg {
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
+  vertical-align: top;
+}
+
+.License small {
+  display: block;
+  margin-top: 12px;
+  font-size: inherit;
+}
+

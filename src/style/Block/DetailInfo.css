@@ -1,0 +1,12 @@
+.DetailInfo {
+    margin-top: 3.75rem;
+  }
+
+  .DetailInfo__image {
+    width: 88%;
+    display: block;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    border-radius: 30px;
+  }
+
