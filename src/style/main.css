@@ -435,3 +435,36 @@ ul ul {
   margin-top: 12px;
   font-size: inherit;
 }
+
+.DetailInfo {
+  margin-top: 3.75rem;
+}
+
+.DetailInfo__image {
+  width: 88%;
+  display: block;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  border-radius: 30px;
+}
+
+.MetaInformationList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.MetaInformationList__item {
+  display: flex;
+}
+
+.MetaInformationList__label {
+  align-self: baseline;
+  border: 1px solid #151A03;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.MetaInformationList__value {
+  margin-left: 8px;
+}
