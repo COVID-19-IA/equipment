@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  margin: 5rem auto 1.875rem;
+  margin: 7rem auto 1.875rem;
   width: 90%;
   max-width: 63.75rem;
   letter-spacing: 0.03em;
@@ -80,6 +80,34 @@ ul ul {
   padding: 0 !important;
   display: block !important;
   visibility: visible !important;
+}
+
+.Breadcrumb {
+  position: absolute;
+  top: 23px;
+  left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.Breadcrumb__crumb {
+  padding: 7px 10px 5px;
+  line-height: 1;
+  background-color: #fff;
+  border-radius: 1000px;
+  text-decoration: none;
+}
+
+.Breadcrumb__crumb[aria-current] {
+  padding: 4px 8px;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.Breadcrumb__separator {
+  margin: 0 8px;
 }
 
 .Header {
