@@ -17,12 +17,13 @@ module.exports = function (eleventyConfig) {
   });
 
   // Nunjucks Shortcode
-  eleventyConfig.addNunjucksShortcode("baseTag", (v) => {
-    return process.env.NODE_ENV === "production" ? `<base href="${v}">` : "";
-  });
-
   eleventyConfig.addNunjucksShortcode("unsslize", (v) => {
     return v.replace("https:", "http:");
+  });
+
+  // browser-sync option
+  eleventyConfig.setBrowserSyncConfig({
+    startPath: "/ppe/"
   });
 
   return {
