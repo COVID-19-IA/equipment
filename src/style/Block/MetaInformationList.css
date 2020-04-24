@@ -18,26 +18,44 @@
   }
 
   .MetaInformationList__label {
-    padding: 2px 4px;
-    border: 1px solid #151A03;
-    border-radius: 4px;
     font-size: 0.875rem;
     line-height: 1;
     white-space: nowrap;
+  }
+
+  .MetaInformationList__label span {
+    padding: 2px 4px;
+    border: 1px solid #151A03;
+    border-radius: 4px;
   }
 
   .MetaInformationList__value {
     margin-left: 8px;
   }
 
-  @media (min-width: 426px) {
+  @media (max-width: 769px) {
     .MetaInformationList {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      display: table;
       margin-top: 0;
-      margin-bottom: -30px;
-      padding: 0 60px;
+      padding: 0;
+      font-size: 0.875rem;
+    }
+
+    .MetaInformationList__item {
+      display: table-row;
+      padding-bottom: 20px;
+    }
+
+    .MetaInformationList__label {
+      display: table-cell;
+      text-align: center;
+      border: 3px solid transparent;
+    }
+
+    .MetaInformationList__label span {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 100%;
     }
   }
 

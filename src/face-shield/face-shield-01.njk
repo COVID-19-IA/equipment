@@ -59,26 +59,28 @@ category: face-shield
 
     <article class="Article">
       <h1 class="Article__title">{{ title }}</h1>
-      <span class="Chip">手作り可能</span>
-      <span class="Chip">単回使用</span>
-      <span class="Chip -not-recommended">医療非推奨</span>
+      <ul class="Article__meta">
+        <li><span class="Chip">手作り可能</span></li>
+        <li><span class="Chip">単回使用</span></li>
+        <li><span class="Chip -not-recommended">医療非推奨</span></li>
+      </ul>
       <div class="DetailInfo">
         <img class="DetailInfo__image" src="../../image/photos/face-shield-01_cover.jpg" alt="">
         <dl class="MetaInformationList">
           <div class="MetaInformationList__item">
-            <dt class="MetaInformationList__label">概評</dt>
+            <dt class="MetaInformationList__label"><span>概評</span></dt>
             <dd class="MetaInformationList__value">作りやすいが医療機関での適応は慎重に</dd>
           </div>
           <div class="MetaInformationList__item">
-            <dt class="MetaInformationList__label">考案者</dt>
+            <dt class="MetaInformationList__label"><span>考案者</span></dt>
             <dd class="MetaInformationList__value">ノザイナー株式会社 太刀川英輔 氏</dd>
           </div>
           <div class="MetaInformationList__item">
-            <dt class="MetaInformationList__label">公表日</dt>
+            <dt class="MetaInformationList__label"><span>公表日</span></dt>
             <dd class="MetaInformationList__value"><time datetime="2020-04-20">2020年4月20日</time></dd>
           </div>
           <div class="MetaInformationList__item">
-            <dt class="MetaInformationList__label">評価日</dt>
+            <dt class="MetaInformationList__label"><span>評価日</span></dt>
             <dd class="MetaInformationList__value"><time datetime="2020-04-24">2020年4月24日</time></dd>
           </div>
         </dl>
@@ -97,33 +99,35 @@ category: face-shield
           <h2>用途早見表</h2>
           <a href="#Uses-table"><span class="VisuallyHidden">このセクションへのリンク</span></a>
         </header>
-        <dl class="uses-table">
-          <div>
-            <dt>エアロゾル発生処置等</dt>
-            <dd><img src="../../image/NG.svg" alt="NG" /></dd>
-          </div>
-          <div>
-            <dt>発熱外来</dt>
-            <dd><img src="../../image/OK.svg" alt="OK" /></dd>
-          </div>
-          <div>
-            <dt>一般診療</dt>
-            <dd><img src="../../image/OK.svg" alt="OK" /></dd>
-          </div>
-          <div>
-            <dt>採血</dt>
-            <dd><img src="../../image/OK.svg" alt="OK" /></dd>
-          </div>
-          <div>
-            <dt>病院受付業務</dt>
-            <dd><img src="../../image/OK.svg" alt="OK" /></dd>
-          </div>
-          <div>
-            <dt>介護施設</dt>
-            <dd><img src="../../image/OK.svg" alt="OK" /></dd>
-          </div>
-        </dl>
-        <p>※ エアロゾル発生処置：気管挿管、喀痰吸引、気道検体採取など、気道にアプローチする処置。</p>
+        <div class="UsesTable">
+          <dl class="UsesTable__body">
+            <div class="UsesTable__item">
+              <dt class="UsesTable__key">エアロゾル発生処置等</dt>
+              <dd class="UsesTable__value"><img src="../../image/NG.svg" alt="NG" /></dd>
+            </div>
+            <div class="UsesTable__item">
+              <dt class="UsesTable__key">発熱外来</dt>
+              <dd class="UsesTable__value"><img src="../../image/OK.svg" alt="OK" /></dd>
+            </div>
+            <div class="UsesTable__item">
+              <dt class="UsesTable__key">一般診療</dt>
+              <dd class="UsesTable__value"><img src="../../image/OK.svg" alt="OK" /></dd>
+            </div>
+            <div class="UsesTable__item">
+              <dt class="UsesTable__key">採血</dt>
+              <dd class="UsesTable__value"><img src="../../image/OK.svg" alt="OK" /></dd>
+            </div>
+            <div class="UsesTable__item">
+              <dt class="UsesTable__key">病院受付業務</dt>
+              <dd class="UsesTable__value"><img src="../../image/OK.svg" alt="OK" /></dd>
+            </div>
+            <div class="UsesTable__item">
+              <dt class="UsesTable__key">介護施設</dt>
+              <dd class="UsesTable__value"><img src="../../image/OK.svg" alt="OK" /></dd>
+            </div>
+          </dl>
+          <p class="UsesTable__caption">エアロゾル発生処置：気管挿管、喀痰吸引、気道検体採取など、気道にアプローチする処置。</p>
+        </div>
       </section>
 
       <section class="Section -hasSeparator" id="How-to-make">
@@ -131,14 +135,14 @@ category: face-shield
           <h2>作り方</h2>
           <a href="#How-to-make"><span class="VisuallyHidden">このセクションへのリンク</span></a>
         </header>
-        <figure>
-          <blockquote>
+        <figure class="HowToMakeMovie">
+          <blockquote class="HowToMakeMovie__contents">
             <div class="FlexibleFrame">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/nu441SMQiNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </blockquote>
-          <figcaption>
-          <cite><a href="https://www.pandaid.jp/hygiene/face-shield">PANDAID フェイスシールド</a></cite>
+          <figcaption class="HowToMakeMovie__credit">
+          出典: <cite><a href="https://www.pandaid.jp/hygiene/face-shield">PANDAID フェイスシールド</a></cite>
           </figcaption>
         </figure>
       </section>
@@ -149,23 +153,23 @@ category: face-shield
           <a href="#Evalutations"><span class="VisuallyHidden">このセクションへのリンク</span></a>
         </header>
         <dl class="EvaluationsList">
-          <div class="Evaluation">
-            <dt class="Evaluation__head">規格等</dt>
-            <dd class="Evaluation__content">
+          <div class="EvaluationsList__item">
+            <dt class="EvaluationsList__head">規格等</dt>
+            <dd class="EvaluationsList__content">
               <b>非準拠</b>
               <span class="Evaluation__description">JIS規格の準拠に相当すると思われるか</span>
             </dd>
           </div>
-          <div class="Evaluation">
-            <dt class="Evaluation__head">飛沫防護性</dt>
-            <dd class="Evaluation__content">
+          <div class="EvaluationsList__item">
+            <dt class="EvaluationsList__head">飛沫防護性</dt>
+            <dd class="EvaluationsList__content">
               <div class="Evaluation__starRating">
                 <span class="Evaluation__stars" aria-hidden="true">
                   <img src="../../image/star-black.svg" alt="黒い星" />
                   <img src="../../image/star-black.svg" alt="黒い星" />
                   <img src="../../image/star-black.svg" alt="黒い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
                 </span>
                 <span class="VisuallyHidden">5段階中</span>
                 <span class="Evaluation__starRatingValue">3</span>
@@ -173,16 +177,16 @@ category: face-shield
               <span class="Evaluation__description">正面および上部等からの飛沫の進入を十分に防げるか</span>
             </dd>
           </div>
-          <div class="Evaluation">
-            <dt class="Evaluation__head">運動フィット性</dt>
-            <dd class="Evaluation__content">
+          <div class="EvaluationsList__item">
+            <dt class="EvaluationsList__head">運動フィット性</dt>
+            <dd class="EvaluationsList__content">
               <div class="Evaluation__starRating">
                 <span class="Evaluation__stars" aria-hidden="true">
                   <img src="../../image/star-black.svg" alt="黒い星" />
                   <img src="../../image/star-black.svg" alt="黒い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
                 </span>
                 <span class="VisuallyHidden">5段階中</span>
                 <span class="Evaluation__starRatingValue">2</span>
@@ -190,16 +194,16 @@ category: face-shield
               <span class="Evaluation__description">正面および上部等からの飛沫の進入を十分に防げるか</span>
             </dd>
           </div>
-          <div class="Evaluation">
-            <dt class="Evaluation__head">快適性</dt>
-            <dd class="Evaluation__content">
+          <div class="EvaluationsList__item">
+            <dt class="EvaluationsList__head">快適性</dt>
+            <dd class="EvaluationsList__content">
               <div class="Evaluation__starRating">
                 <span class="Evaluation__stars" aria-hidden="true">
                   <img src="../../image/star-black.svg" alt="黒い星" />
                   <img src="../../image/star-black.svg" alt="黒い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
                 </span>
                 <span class="VisuallyHidden">5段階中</span>
                 <span class="Evaluation__starRatingValue">2</span>
@@ -207,16 +211,16 @@ category: face-shield
               <span class="Evaluation__description">正面および上部等からの飛沫の進入を十分に防げるか</span>
             </dd>
           </div>
-          <div class="Evaluation">
-            <dt class="Evaluation__head">使用耐久性</dt>
-            <dd class="Evaluation__content">
+          <div class="EvaluationsList__item">
+            <dt class="EvaluationsList__head">使用耐久性</dt>
+            <dd class="EvaluationsList__content">
               <div class="Evaluation__starRating">
                 <span class="Evaluation__stars" aria-hidden="true">
                   <img src="../../image/star-black.svg" alt="黒い星" />
                   <img src="../../image/star-black.svg" alt="黒い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
                 </span>
                 <span class="VisuallyHidden">5段階中</span>
                 <span class="Evaluation__starRatingValue">2</span>
@@ -224,16 +228,16 @@ category: face-shield
               <span class="Evaluation__description">正面および上部等からの飛沫の進入を十分に防げるか</span>
             </dd>
           </div>
-          <div class="Evaluation">
-            <dt class="Evaluation__head">消毒耐久性</dt>
-            <dd class="Evaluation__content">
+          <div class="EvaluationsList__item">
+            <dt class="EvaluationsList__head">消毒耐久性</dt>
+            <dd class="EvaluationsList__content">
               <div class="Evaluation__starRating">
                 <span class="Evaluation__stars" aria-hidden="true">
                   <img src="../../image/star-black.svg" alt="黒い星" />
                   <img src="../../image/star-black.svg" alt="黒い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
                 </span>
                 <span class="VisuallyHidden">5段階中</span>
                 <span class="Evaluation__starRatingValue">2</span>
@@ -241,9 +245,9 @@ category: face-shield
               <span class="Evaluation__description">正面および上部等からの飛沫の進入を十分に防げるか</span>
             </dd>
           </div>
-          <div class="Evaluation">
-            <dt class="Evaluation__head">作製容易性</dt>
-            <dd class="Evaluation__content">
+          <div class="EvaluationsList__item">
+            <dt class="EvaluationsList__head">作製容易性</dt>
+            <dd class="EvaluationsList__content">
               <div class="Evaluation__starRating">
                 <span class="Evaluation__stars" aria-hidden="true">
                   <img src="../../image/star-black.svg" alt="黒い星" />
@@ -258,9 +262,9 @@ category: face-shield
               <span class="Evaluation__description">正面および上部等からの飛沫の進入を十分に防げるか</span>
             </dd>
           </div>
-          <div class="Evaluation">
-            <dt class="Evaluation__head">低コスト性</dt>
-            <dd class="Evaluation__content">
+          <div class="EvaluationsList__item">
+            <dt class="EvaluationsList__head">低コスト性</dt>
+            <dd class="EvaluationsList__content">
               <div class="Evaluation__starRating">
                 <span class="Evaluation__stars" aria-hidden="true">
                   <img src="../../image/star-black.svg" alt="黒い星" />
@@ -275,16 +279,16 @@ category: face-shield
               <span class="Evaluation__description">正面および上部等からの飛沫の進入を十分に防げるか</span>
             </dd>
           </div>
-          <div class="Evaluation">
-            <dt class="Evaluation__head">再利用性</dt>
-            <dd class="Evaluation__content">
+          <div class="EvaluationsList__item">
+            <dt class="EvaluationsList__head">再利用性</dt>
+            <dd class="EvaluationsList__content">
               <div class="Evaluation__starRating">
                 <span class="Evaluation__stars" aria-hidden="true">
                   <img src="../../image/star-black.svg" alt="黒い星" />
                   <img src="../../image/star-black.svg" alt="黒い星" />
                   <img src="../../image/star-black.svg" alt="黒い星" />
                   <img src="../../image/star-half.svg" alt="左半分が黒、右半分が白い星" />
-                  <img src="../../image/star-white.svg" alt="白い星" />
+                  <img class="Evaluation__star -white" src="../../image/star-white.svg" alt="白い星" />
                 </span>
                 <span class="VisuallyHidden">5段階中</span>
                 <span class="Evaluation__starRatingValue">3.5</span>

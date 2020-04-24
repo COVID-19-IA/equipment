@@ -1,0 +1,43 @@
+.EvaluationsList {
+  display: table;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.EvaluationsList__item {
+  display: table-row;
+}
+
+.EvaluationsList__head,
+.EvaluationsList__content {
+  display: table-cell;
+  padding-bottom: 37px;
+}
+
+.EvaluationsList__head {
+  padding-right: 32px;
+  line-height: 1;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.Evaluation__starRating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.Evaluation__stars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 8px;
+}
+
+.Evaluation__star.-white {
+  opacity: 0.7;
+}
+
+.Evaluation__starRatingValue {
+  margin-left: 8px;
+}

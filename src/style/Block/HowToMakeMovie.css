@@ -1,0 +1,12 @@
+.HowToMakeMovie {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.HowToMakeMovie__contents {
+  margin: 0 0 50px;
+}
+
+.HowToMakeMovie__credit {
+  text-align: center;
+}

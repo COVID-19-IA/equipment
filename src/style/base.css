@@ -61,3 +61,7 @@ ol ol,
 ul ul {
   margin-top: 1rem;
 }
+
+cite {
+  font-style: normal;
+}
