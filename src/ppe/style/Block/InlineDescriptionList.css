@@ -1,0 +1,16 @@
+.InlineDescriptionList {
+  margin: 1rem 0;
+}
+
+.InlineDescriptionList > div {
+  margin-bottom: 8px;
+}
+
+.InlineDescriptionList dd {
+  display: inline;
+  margin-left: 0;
+}
+
+.InlineDescriptionList dd:not(:last-child)::after {
+  content: ","
+}
