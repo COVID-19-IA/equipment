@@ -101,16 +101,17 @@ ul ul {
   text-decoration: none;
 }
 
-@media (min-width: 426px) {
-  .Breadcrumb__crumb {
-    display: inline-block;
-  }
-}
-
 .Breadcrumb__crumb[aria-current] {
   padding: 4px 8px;
   background-color: transparent;
   border: 2px solid #fff;
+}
+
+@media (max-width: 426px) {
+  .Breadcrumb__crumb[aria-current],
+  .Breadcrumb__crumb + img:last-of-type {
+    display: none;
+  }
 }
 
 .Breadcrumb__separator {
