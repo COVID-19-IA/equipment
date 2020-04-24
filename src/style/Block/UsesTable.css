@@ -1,0 +1,63 @@
+.UsesTable {
+  text-align: center;
+}
+
+.UsesTable__body {
+  display: inline-grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: auto;
+  gap: 30px;
+  margin: 0 0 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 1023px) {
+  .UsesTable__body {
+    grid-template-columns: 250px 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .UsesTable__body {
+    grid-template-columns: 250px;
+    gap: 24px;
+  }
+}
+
+.UsesTable__item {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.UsesTable__key {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.UsesTable__value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 100%;
+  margin-left: 0;
+  background-color: #FFFFFF;
+}
+
+dd.UsesTable__value img {
+  transform: translateY(0.5px);
+}
+
+/* `.Section p` 超えるやつ */
+.Section .UsesTable__caption {
+  margin: 0;
+  max-width: none;
+  text-align: center;
+}

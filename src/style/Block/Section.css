@@ -23,23 +23,6 @@
   hanging-punctuation: allow-end;
 }
 
-.Section dl {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 38.75rem;
-  line-height: 2;
-}
-
-.Section dt {
-  margin-top: 1rem;
-  font-family: "TazuganeInfoStdN-Bold", sans-serif;
-}
-
-.Section dd {
-  margin-left: 0;
-  hanging-punctuation: allow-end;
-}
-
 .Section__nesting {
   margin-top: 2.5rem
 }
