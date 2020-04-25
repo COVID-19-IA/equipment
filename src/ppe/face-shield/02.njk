@@ -1,5 +1,6 @@
 ---
 date: Last Modified
+base: https://covid-19-act.jp/ppe/
 url: https://covid-19-act.jp/ppe/face-shield/02.html
 title: クリアファイルだけで作るフェイスシールド
 category: face-shield
@@ -32,9 +33,9 @@ permalink: ppe/face-shield/02.html
 
   <body>
     <nav class="Breadcrumb">
-      <a class="Breadcrumb__crumb" href="https://covid-19-act.jp/ppe/">トップ</a>
+      <a class="Breadcrumb__crumb" href="{{ base }}">トップ</a>
       <img class="Breadcrumb__separator" src="/ppe/image/round-triangle-right.svg" alt="" />
-      <a class="Breadcrumb__crumb" href="https://covid-19-act.jp/ppe/{{ category }}/">ゴーグルとフェイスシールド一覧</a>
+      <a class="Breadcrumb__crumb" href="{{ base }}{{ category }}/">ゴーグルとフェイスシールド一覧</a>
       <img class="Breadcrumb__separator" src="/ppe/image/round-triangle-right.svg" alt="" />
       <b class="Breadcrumb__crumb" aria-current="page">{{ title }}</b>
     </nav>
