@@ -1,10 +1,10 @@
 .Chip {
   display: inline-block;
-  padding: 2px 0.25rem 1px;
+  padding: 4px 0.25rem 3px;
   border-radius: 0.25rem;
   color: #fff;
   font-size: 0.875rem;
-  line-height: 1.25;
+  line-height: 1;
   background-color: #000;
 }
 
