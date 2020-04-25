@@ -58,8 +58,12 @@ dd.UsesTable__value img {
 }
 
 /* `.Section p` 超えるやつ */
-.Section .UsesTable__caption {
+.UsesTable__caption p {
   margin: 0;
   max-width: none;
   text-align: center;
+}
+
+.UsesTable__caption p + p {
+  margin-top: 8px;
 }
