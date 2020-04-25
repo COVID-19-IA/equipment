@@ -25,6 +25,7 @@
 }
 
 .ColumnList .Btn {
+  display: flex;
   margin-right: auto;
   margin-left: auto;
 }
