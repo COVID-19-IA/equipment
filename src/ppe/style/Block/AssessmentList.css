@@ -4,6 +4,9 @@
 .AssessmentList__row {
   margin-top: 1.25rem;
 }
+.AssessmentList__value {
+  margin-left: 0;
+}
 
 @media (min-width: 768px) {
   .AssessmentList__row {
