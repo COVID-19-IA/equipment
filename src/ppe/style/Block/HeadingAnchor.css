@@ -9,6 +9,7 @@
 .HeadingAnchor h3 {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 1.75rem;
 }
 
 @media (min-width: 426px) {
@@ -19,7 +20,6 @@
 }
 
 .HeadingAnchor a {
-  padding-right: 0.25rem;
   padding-left: 0.25rem;
   width: 24px;
   height: 24px;
