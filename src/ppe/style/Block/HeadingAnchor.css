@@ -19,6 +19,7 @@
 }
 
 .HeadingAnchor a {
+  flex-shrink: 0;
   padding-right: 0.25rem;
   padding-left: 0.25rem;
   width: 24px;
