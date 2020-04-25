@@ -8,6 +8,7 @@ og_image_width: 1200
 og_image_height: 630
 og_image_alt: Act Against COVID-19 医療用防護具の代替品 性能評価と作り方
 og_title_preset: Act Against COVID-19 - 医療用防護具の代替品 性能評価と作り方
+og_description: 医療用防護具の在庫不足の際に、正式な規格に基づいてはいないが緊急代替品として使用できるアイテムとその作り方が考案・発表されています。本サイトでは、一般社団法人 職業感染制御研究会による性能評価を加えてご紹介します。
 title:
 category:
 permalink:
@@ -17,11 +18,11 @@ permalink:
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="医療用防護具の在庫不足の際に、正式な規格に基づいてはいないが緊急代替品として使用できるアイテムとその作り方が考案・発表されています。本サイトでは、一般社団法人 職業感染制御研究会による性能評価を加えてご紹介します。">
+    <meta name="description" content="{{ og_description }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ og_title_preset }}">
     <meta property="og:title" content="{{ og_title_preset }}">
-    <meta property="og:description" content="医療用防護具の在庫不足の際に、正式な規格に基づいてはいないが緊急代替品として使用できるアイテムとその作り方が考案・発表されています。本サイトでは、一般社団法人 職業感染制御研究会による性能評価を加えてご紹介します。">
+    <meta property="og:description" content="{{ og_description }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ public_url }}">
     <meta property="og:image" content="{{ og_image }}">
@@ -46,7 +47,7 @@ permalink:
         <img class="Header__logo" src="/ppe/image/logo.svg" alt="Act Against COVID-19" width="332" height="86" />
         <h1 class="Header__main">医療用防護具の代替品<br>性能評価と作り方</h1>
         <p class="Header__note">評価は一般社団法人 職業感染制御研究会による</p>
-        <p class="Header__desc">医療用防護具の在庫不足の際に、正式な規格に基づいてはいないが緊急代替品として使用できるアイテムとその作り方が考案・発表されています。本サイトでは、一般社団法人 職業感染制御研究会による性能評価を加えてご紹介します。</p>
+        <p class="Header__desc">{{ og_description }}</p>
       </header>
 
       <nav>
