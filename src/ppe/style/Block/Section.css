@@ -23,9 +23,6 @@
 }
 
 .Section p {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 38.75rem;
   hanging-punctuation: allow-end;
 }
 
