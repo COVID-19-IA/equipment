@@ -12,5 +12,5 @@
 }
 
 .InlineDescriptionList dd:not(:last-child)::after {
-  content: ","
+  content: ",";
 }
