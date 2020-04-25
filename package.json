@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "equipment",
+  "name": "ppe",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:COVID-19-IA/equipment.git",
+  "repository": "git@github.com:COVID-19-IA/ppe.git",
   "author": "Takehiro Kawase <info@polaar.jp>",
-  "license": "BY-NC-ND",
+  "license": "CC BY-NC-ND 4.0",
   "scripts": {
     "build": "NODE_ENV=production npm-run-all -p build:*",
     "build:html": "eleventy",
