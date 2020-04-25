@@ -1,38 +1,44 @@
 ---
 date: Last Modified
-url: https://covid-19-act.jp/ppe/
+base: https://covid-19-act.jp/ppe/
+public_url: https://covid-19-act.jp/ppe/
+og_image: http://covid-19-act.jp/ppe/image/OGP.png
+og_image_secure: https://covid-19-act.jp/ppe/image/OGP.png
+og_image_width: 1200
+og_image_height: 630
+og_image_alt: Act Against COVID-19 医療用防護具の代替品 性能評価と作り方
+og_title_preset: Act Against COVID-19 - 医療用防護具の代替品 性能評価と作り方
+og_description: 医療用防護具の在庫不足の際に、正式な規格に基づいてはいないが緊急代替品として使用できるアイテムとその作り方が考案・発表されています。本サイトでは、一般社団法人 職業感染制御研究会による性能評価を加えてご紹介します。
+title:
+category:
+permalink:
 ---
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="医療用防護具の在庫不足の際に、正式な規格に基づいてはいないが緊急代替品として使用できるアイテムとその作り方が考案・発表されています。本サイトでは、一般社団法人 職業感染制御研究会による性能評価を加えてご紹介します。">
+    <meta name="description" content="{{ og_description }}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Act Against COVID-19 - 医療用防護具の代替品性能評価と作り方">
-    <meta property="og:title" content="Act Against COVID-19 - 医療用防護具の代替品性能評価と作り方">
-    <meta property="og:description" content="医療用防護具の在庫不足の際に、正式な規格に基づいてはいないが緊急代替品として使用できるアイテムとその作り方が考案・発表されています。本サイトでは、一般社団法人 職業感染制御研究会による性能評価を加えてご紹介します。">
+    <meta name="twitter:title" content="{{ og_title_preset }}">
+    <meta property="og:title" content="{{ og_title_preset }}">
+    <meta property="og:description" content="{{ og_description }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ url }}">
-    <meta property="og:image" content="{% unsslize url %}image/OGP.png">
-    <meta property="og:image:secure_url" content="{{ url }}image/OGP.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <title>Act Against COVID-19 - 医療用防護具の代替品 性能評価と作り方</title>
+    <meta property="og:url" content="{{ public_url }}">
+    <meta property="og:image" content="{{ og_image }}">
+    <meta property="og:image:secure_url" content="{{ og_image_secure }}">
+    <meta property="og:image:width" content="{{ og_image_width }}">
+    <meta property="og:image:height" content="{{ og_image_height }}">
+    <meta property="og:image:alt" content="{{ og_image_alt }}">
+    <title>{{ og_title_preset }}</title>
     <link rel="icon" href="/ppe/image/favicon.svg" sizes="any" type="image/svg+xml">
     <link rel="mask-icon" href="/ppe/image/favicon.svg" color="yellow">
     <link rel="icon alternate" href="/ppe/image/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="/ppe/image/apple-touch-icon.png" sizes="180x180">
     <link rel="stylesheet" href="/ppe/style.css">
-    <link rel="canonical" href="{{ url }}">
-    <script src="//webfont.fontplus.jp/accessor/script/fontplus.js?owI8-d2e8Dw%3D&amp;box=wzsij36dhRc%3D&amp;timeout=5&amp;aa=1&amp;ab=2"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162419995-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-162419995-4');
-    </script>
+    <link rel="canonical" href="{{ public_url }}">
+    {% include "gtag.njk" %}
+    {% include "fontplus.njk" %}
   </head>
 
   <body>
@@ -41,7 +47,7 @@ url: https://covid-19-act.jp/ppe/
         <img class="Header__logo" src="/ppe/image/logo.svg" alt="Act Against COVID-19" width="332" height="86" />
         <h1 class="Header__main">医療用防護具の代替品<br>性能評価と作り方</h1>
         <p class="Header__note">評価は一般社団法人 職業感染制御研究会による</p>
-        <p class="Header__desc">医療用防護具の在庫不足の際に、正式な規格に基づいてはいないが緊急代替品として使用できるアイテムとその作り方が考案・発表されています。本サイトでは、一般社団法人 職業感染制御研究会による性能評価を加えてご紹介します。</p>
+        <p class="Header__desc">{{ og_description }}</p>
       </header>
 
       <nav>
