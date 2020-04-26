@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+.ColumnList > li {
+  flex: 1 0 300px;
+  width: 300px;
+}
+
 .ColumnList .-relative {
   position: relative;
 }
