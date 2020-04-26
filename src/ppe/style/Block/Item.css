@@ -41,7 +41,7 @@
 }
 
 .Item__pict::after {
-  content: "No Image Available";
+  content: "No Photo Available";
   position: absolute;
   top: 50%;
   left: 50%;
