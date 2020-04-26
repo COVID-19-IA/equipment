@@ -4,6 +4,8 @@
 
 .CreditList__key {
   margin-top: 1rem;
+  font-family: "TazuganeInfoStdN-Bold", sans-serif;
+  font-weight: bold;
 }
 
 .CreditList__value {
