@@ -29,23 +29,43 @@
 .Item__pict::before {
   /* 1x1 spacer.gif */
   content: url('data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7');
-  box-sizing: border-box;
   display: block;
   width: 100%;
   height: 0;
   padding-bottom: 100%;
   border-radius: 1.875rem;
-  border: 2px solid #fff;
-  background-color: rgba(21,26,3,.05);
   background-size: 100%;
 }
 
 .Item__pict::after {
-  content: "No Photo Available";
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  border-radius: 1.875rem;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.-mask .Item__pict::after {
+  background-image: url(/ppe/image/illustrations/mask_placeholder-thumbnail.jpg);
+}
+
+.-face-shield .Item__pict::after {
+  background-image: url(/ppe/image/illustrations/face-shield_placeholder-thumbnail.jpg);
+}
+
+.-gown .Item__pict::after {
+  background-image: url(/ppe/image/illustrations/gown_placeholder-thumbnail.jpg);
+}
+
+.-glove .Item__pict::after {
+  background-image: url(/ppe/image/illustrations/glove_placeholder-thumbnail.jpg);
+}
+
+.-equipment .Item__pict::after {
+  background-image: url(/ppe/image/illustrations/equipment_placeholder-thumbnail.jpg);
 }
 
 .Item__chip {
