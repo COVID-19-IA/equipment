@@ -7,8 +7,8 @@
 }
 
 .ColumnList > li {
-  flex: 1 0 300px;
-  width: 300px;
+  flex: 1 0 15.625rem;
+  width: 15.625rem;
 }
 
 .ColumnList .-relative {
@@ -32,7 +32,7 @@
 .ColumnList li {
   list-style: inside none;
   margin-top: 3.75rem;
-  max-width: 18.75rem;
+  max-width: 15.625rem;
 }
 
 @media (min-width: 426px) {
