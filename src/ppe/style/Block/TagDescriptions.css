@@ -1,20 +1,24 @@
-.AssessmentList {
+.TagDescriptions {
   margin-top: 1.5625rem;
 }
-.AssessmentList__row {
+.TagDescriptions__row {
   margin-top: 1.25rem;
 }
-.AssessmentList__value {
+.TagDescriptions__value {
   margin-left: 0;
   max-width: 30rem;
 }
 
+.TagDescriptions__tag {
+  margin: 0.2em 0;
+}
+
 @media (min-width: 768px) {
-  .AssessmentList__row {
+  .TagDescriptions__row {
     display: flex;
     align-items: flex-start;
   }
-  .AssessmentList__key {
+  .TagDescriptions__key {
     flex-grow: 1;
     width: 9rem;
     max-width: 9rem;
@@ -22,12 +26,12 @@
     display: flex;
     align-items: center;
   }
-  .AssessmentList__key span {
+  .TagDescriptions__key span {
     flex-basis: 0%;
     width: 100%;
     white-space: nowrap;
   }
-  .AssessmentList__key::after {
+  .TagDescriptions__key::after {
     content: "";
     display: block;
     margin-right: 0.5rem;
