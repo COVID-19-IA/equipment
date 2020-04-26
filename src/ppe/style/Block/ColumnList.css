@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.ColumnList .-relative {
+  position: relative;
+}
+
 @media (min-width: 426px) {
   .ColumnList {
     margin-right: -1.5625rem;
