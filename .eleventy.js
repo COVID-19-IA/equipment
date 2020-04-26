@@ -16,11 +16,6 @@ module.exports = function (eleventyConfig) {
     return dayjs(v).format("YYYY-MM-DDTHH:mmZ");
   });
 
-  // Nunjucks Shortcode
-  eleventyConfig.addNunjucksShortcode("unsslize", (v) => {
-    return v.replace("https:", "http:");
-  });
-
   // browser-sync option
   eleventyConfig.setBrowserSyncConfig({
     startPath: "/ppe/"
