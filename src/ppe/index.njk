@@ -31,11 +31,11 @@ permalink:
     <meta property="og:image:height" content="{{ og_image_height }}">
     <meta property="og:image:alt" content="{{ og_image_alt }}">
     <title>{{ og_title_preset }}</title>
-    <link rel="icon" href="/ppe/image/favicon.svg" sizes="any" type="image/svg+xml">
-    <link rel="mask-icon" href="/ppe/image/favicon.svg" color="yellow">
-    <link rel="icon alternate" href="/ppe/image/favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="/ppe/image/apple-touch-icon.png" sizes="180x180">
-    <link rel="stylesheet" href="/ppe/style.css">
+    <link rel="icon" href="/ppe/image/favicon.svg{% cacheBuster %}" sizes="any" type="image/svg+xml">
+    <link rel="mask-icon" href="/ppe/image/favicon.svg{% cacheBuster %}" color="yellow">
+    <link rel="icon alternate" href="/ppe/image/favicon.png{% cacheBuster %}" type="image/png">
+    <link rel="apple-touch-icon" href="/ppe/image/apple-touch-icon.png{% cacheBuster %}" sizes="180x180">
+    <link rel="stylesheet" href="/ppe/style.css{% cacheBuster %}">
     <link rel="canonical" href="{{ public_url }}">
     {% include "gtag.njk" %}
     {% include "fontplus.njk" %}
