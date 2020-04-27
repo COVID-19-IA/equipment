@@ -16,9 +16,9 @@ module.exports = function (eleventyConfig) {
     return dayjs(v).format("YYYY-MM-DDTHH:mmZ");
   });
 
-  // filter
-  eleventyConfig.addNunjucksFilter("cacheBuster", (v) => {
-    return `?${v.getTime()}`
+  // Shortcode
+  eleventyConfig.addShortcode("cacheBuster", () => {
+    return `?${dayjs().format("YYYYMMDDHHmm")}`
   });
 
   // browser-sync option
