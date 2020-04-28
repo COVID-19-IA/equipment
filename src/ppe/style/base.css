@@ -73,3 +73,7 @@ cite {
 strong {
   font-family: "TazuganeGothicStdN-Heavy", sans-serif;
 }
+
+ins {
+  text-decoration: none;
+}
